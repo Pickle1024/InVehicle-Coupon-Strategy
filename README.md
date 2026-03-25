@@ -2,6 +2,8 @@
 
 > Analyzing 12,684 driving scenarios revealed that coupon type, timing, and user persona are the three levers that determine whether a driver accepts or ignores an in-vehicle coupon
 
+**[View Full Presentation (PDF)](docs/Group9_InVehicle_Coupon_Strategy_Presentation.pdf)** | [Project Report (PDF)](docs/Group9_InVehicle_Coupon_Strategy_Report.pdf)
+
 ---
 
 ## Background
