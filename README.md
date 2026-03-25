@@ -26,6 +26,9 @@ We analyzed 12,684 coupon delivery scenarios from the [UCI Machine Learning Repo
 
 Logistic Regression coefficient analysis reveals the feature hierarchy:
 
+<img width="1589" height="690" alt="image" src="https://github.com/user-attachments/assets/72d4d8ae-03ba-4752-963f-bc22898e4cf6" />
+
+
 | Feature | Direction | Interpretation |
 |---|---|---|
 | Carry out & Take away coupon | Strong positive | Highest acceptance signal |
@@ -48,6 +51,8 @@ Occupation also plays a surprisingly large role: healthcare workers consistently
 
 #### The Five Personas
 
+<img width="1183" height="490" alt="image" src="https://github.com/user-attachments/assets/602b9bc0-8dc5-49c4-8d34-1365e5749236" />
+
 | Persona | Size | Accept Rate | Profile |
 |---|---|---|---|
 | **Young Singles** | 3,972 (31%) | 57% | Age ~26, no children, low income, moderate coffee/takeout |
@@ -57,6 +62,8 @@ Occupation also plays a surprisingly large role: healthcare workers consistently
 | **Young Bar Hoppers** | 1,139 (9%) | 62% | Age ~26, highest bar frequency, moderate other venues |
 
 #### What Each Persona Wants
+
+<img width="1033" height="489" alt="image" src="https://github.com/user-attachments/assets/aa23820a-17f8-43ba-abb0-5a47f762cbcb" />
 
 - **Social Food Lovers** (66% accept) respond to almost everything — they're the easy wins
 - **Conservative Families** (51% accept) are the hardest to convert — they reject Bar and Coffee House coupons but accept Carry-out
@@ -80,11 +87,23 @@ Clustering adds negligible value for linear models (LR already captures the vari
 
 ---
 
-### Finding #3: Targeted Delivery Cuts Waste by 72% vs. Blanket Distribution
+### Finding #3: Who you send to matters more than what you send
+
+The same coupon can produce dramatically different outcomes:
+
+<img width="1390" height="528" alt="image" src="https://github.com/user-attachments/assets/e1a0ed45-87e8-496a-8094-8568ea8b8aa4" />
+
+- Bar coupon → Conservative Families: 26% acceptance
+- Bar coupon → Young Bar Hoppers: 80% acceptance
+
+By moving from blanket strategy to persona-targeted delivery, average acceptance improves from 57% → 70% (+13%).
+
 
 **Bottom line**: Using the XGBoost + Clustering model to select _which_ coupons to send to _which_ personas, we can reduce wasted coupons from 59,000 to 16,280 per 100,000 deliveries — a 72% reduction.
 
 #### Scenario: Bar Coupon Campaign
+
+<img width="889" height="491" alt="image" src="https://github.com/user-attachments/assets/48c68579-2529-48f4-91f9-ce76c5450059" />
 
 | Strategy | Coupons Sent | Wasted (Rejected) | Waste Rate |
 |---|---|---|---|
