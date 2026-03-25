@@ -68,7 +68,7 @@ Each model trained **twice** — baseline (no clusters) vs. enhanced (with clust
 
 ```bash
 # Clone the repo
-git clone https://github.com/PickLens/InVehicle-Coupon-Strategy.git
+git clone https://github.com/Pickle1024/InVehicle-Coupon-Strategy.git
 cd InVehicle-Coupon-Strategy
 
 # Create virtual environment
